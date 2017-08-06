@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:customAttrs="http://schemas.android.com/tools"
+    android:background="@color/CanvasBackground">
+
+    <RelativeLayout
+        android:layout_width="933dp"
+        android:layout_height="369dp">
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="@string/app_name"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toStartOf="@+id/textView"
+            android:background="#fff"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:padding="2dp"
+            android:text="Nombre:"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView3"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#fff"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:padding="2dp"
+            android:text="E: Colima"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="39dp"
+            android:background="#fff"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:padding="2dp"
+            android:text="Apellido:"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_below="@+id/txtTitle"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/txtApellido"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#fff"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:padding="2dp"
+            android:text="Apellido"
+            android:textColor="#000000"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="37dp"
+            android:background="#fff"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:padding="2dp"
+            android:text="Estado:"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_below="@+id/txtApellido"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/txtEstado"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#fff"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:padding="2dp"
+            android:text="Estado"
+            android:textColor="#000000"
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="34dp"
+            android:background="#fff"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:padding="2dp"
+            android:text="Municipio:"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_below="@+id/txtEstado"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/txtMunicipio"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#fff"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:padding="2dp"
+            android:text="Municipio"
+            android:textColor="#000000"
+            android:layout_below="@+id/textView6"
+            android:layout_toStartOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/txtTitle"
+            android:background="#fff"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Contribuyente"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/btn_close"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#fff"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Domicilio fiscal"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imgDocumentation1"
+            android:layout_width="200dp"
+            android:layout_height="400dp"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView"
+            android:src="@mipmap/ic_photo" />
+
+        <ImageView
+            android:id="@+id/imgDocumentation"
+            android:layout_width="200dp"
+            android:layout_height="400dp"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:src="@mipmap/ic_photo"
+            android:layout_below="@+id/textView2" />
+
+    </RelativeLayout>
+
+</FrameLayout>

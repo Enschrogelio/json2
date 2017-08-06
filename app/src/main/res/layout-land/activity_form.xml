@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="horizontal"
+            android:padding="0dp">
+
+            <LinearLayout
+                android:id="@+id/lnSalesOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <com.ruby.x.json2.Libraries.LatoTextView
+                    android:text="Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#ccc"
+                    android:textAllCaps="true"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <com.ruby.x.json2.Libraries.LatoTextView
+                    android:id="@+id/txtTitle"
+                    android:textAllCaps="true"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:textColorHint="#a9b0c3"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#00000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#a9b0c3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <com.ruby.x.json2.Libraries.LatoTextView
+                    android:text="Description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#ccc"
+                    android:textAllCaps="true"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <com.ruby.x.json2.Libraries.LatoTextView
+                    android:id="@+id/txtDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:gravity="top|left"
+                    android:inputType="textMultiLine"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:lines="6"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:scrollHorizontally="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#a9b0c3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <com.ruby.x.json2.Libraries.LatoTextView
+                    android:text="Created Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#ccc"
+                    android:textAllCaps="true"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <com.ruby.x.json2.Libraries.LatoTextView
+                    android:id="@+id/txtLng"
+                    android:textAllCaps="true"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:textColorHint="#a9b0c3"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#00000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#a9b0c3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary">
+
+                <com.ruby.x.json2.Libraries.LatoBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="FILE DOCUMENTATION"
+                    android:padding="16dp"
+                    android:textSize="13dp"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/colorWhite"
+                android:text="Contribuyente" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/colorWhite"
+                android:text="Domicilio fiscal" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/imagePreview1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_columnWeight="1"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_camera" />
+                
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/imagePreview"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_columnWeight="1"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_camera" />
+            </GridLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+<!--
+    <com.ruby.x.json2.Libraries.LatoBoldTextView
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        android:textSize="13dp"
+        android:padding="10dp"
+        android:background="#ff0000"
+        android:textColor="@color/colorWhite"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+        -->
+</RelativeLayout>

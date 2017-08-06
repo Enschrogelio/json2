@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ruby.x.json2">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_p"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <activity
+            android:name="com.ruby.x.json2.Views.SplashActivity"
+            android:screenOrientation="reverseLandscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ruby.x.json2.Views.MainActivity"
+            android:screenOrientation="reverseLandscape"
+            android:label=" "
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.ruby.x.json2.Views.FormActivity"
+            android:screenOrientation="reverseLandscape"
+            android:label="Form"
+            android:parentActivityName="com.ruby.x.json2.Views.MainActivity" />
+        <activity
+            android:name="com.ruby.x.json2.Views.DetailActivity"
+            android:screenOrientation="reverseLandscape"
+            android:label="Detail" />
+        <activity
+            android:name="com.ruby.x.json2.Views.pdf"
+            android:label="pdf" />
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3c8dbc</color>
+    <color name="colorPrimaryLight">#6f9bb5</color>
+    <color name="colorPrimaryDark">#0a71ad</color>
+    <color name="colorAccent">#3c8dbc</color>
+    <color name="colorLightGray">#a6abae</color>
+    <color name="colorGray">#495C67</color>
+    <color name="colorGrayLight">#cccccc</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBackroundWhite">#f0f2ea</color>
+
+    <color name="CanvasBackground">#ffffff</color>
+
+</resources>
